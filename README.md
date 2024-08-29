@@ -25,18 +25,21 @@ The api has 4 database tables
 ## API Endpoints
 ### Medspa
 
+**Retrieves all medspas** 
 ##### Method Get 
-**Retrieves all medspas**
 http://127.0.0.1:8000/medspas/
 
-##### Method Get 
+
+
 **Retrieves medspa with specified id**
+##### Method Get 
 http://127.0.0.1:8000/medspas/id/
 
-##### Method Post 
+
 **Create a new medspa**
+##### Method Post 
 http://127.0.0.1:8000/medspas/
-**payload**
+##### payload
 {
     "name":"value",
     "address":"value",
@@ -44,10 +47,10 @@ http://127.0.0.1:8000/medspas/
     "email":"value"
 }
 
+**Update medspa with spcified id**
 ##### Method Put 
-**Update medspa with spcified id **
 http://127.0.0.1:8000/medspas/id/
-**payload**
+##### payload
 {
     "name":"value",
     "address":"value",
@@ -55,29 +58,33 @@ http://127.0.0.1:8000/medspas/id/
     "email":"value"
 }
 
-##### Method Delete 
 **Delete medspa with specified id**
+##### Method Delete 
 http://127.0.0.1:8000/medspas/id/
 
 
 ### Service
 
-##### Method Get 
+
 **Retrieves all services**
+##### Method Get 
 http://127.0.0.1:8000/services/
 
-##### Method Get 
+ 
 **Retrieves all services for medspa with the specified id**
+##### Method Get
 http://127.0.0.1:8000/services/medspa/id
 
-##### Method Get 
+
 **Retrieves service with specified id**
+##### Method Get 
 http://127.0.0.1:8000/services/id/
 
-##### Method Post 
+
 **Create a new service**
+##### Method Post 
 http://127.0.0.1:8000/services/
-**payload**
+##### payload
 {
     "name":"value",
     "description":"value",
@@ -86,10 +93,11 @@ http://127.0.0.1:8000/services/
     "medspa":"value"
 }
 
+
+**Update service with spcified id**
 ##### Method Put 
-**Update service with spcified id **
 http://127.0.0.1:8000/services/id/
-**payload**
+##### payload
 {
     "name":"value",
     "description":"value",
@@ -97,40 +105,52 @@ http://127.0.0.1:8000/services/id/
     "price":"value",
 }
 
-##### Method Delete 
+
 **Delete service with specified id**
+##### Method Delete 
 http://127.0.0.1:8000/service/id/
 
 
 ### Appointment
 
-##### Method Get 
+
 **Retrieves all appointments**
+##### Method Get 
 http://127.0.0.1:8000/appointments/
 
-##### Method Get 
+
 **Retrieves all appointments for with based on their status**
+##### Method Get 
 http://127.0.0.1:8000/appointments/status/option
+
+
 *valid status options*
 - scheduled
 - completed
 - cancelled
 
-##### Method Get 
+
 **Retrieves appointment with specified id**
+##### Method Get 
 http://127.0.0.1:8000/appointments/id/
 
-##### Method Get 
+
 **Retrieves appointment with based on start date**
+##### Method Get 
 http://127.0.0.1:8000/appointments/start-date/YYYY-MM-DD/
+
+
 *example*
+
+
 http://127.0.0.1:8000/appointments/start-date/2024-04-29/
 
 
-##### Method Post 
+
 **Create a new appointment**
+##### Method Post 
 http://127.0.0.1:8000/appointments/
-**payload**
+##### payload
 {
     "medspa": value,
     "services": ["values","values",]
@@ -138,14 +158,16 @@ http://127.0.0.1:8000/appointments/
     "start_time": "values"
 }
 
+
+**Update the status of appointment with spcified id**
 ##### Method Put 
-**Update the status of appointment with spcified id **
 http://127.0.0.1:8000/appointments/id/
-**payload**
+##### payload
 {
   "status":"value",
 }
 
-##### Method Delete 
+
 **Delete service with specified id**
+##### Method Delete 
 http://127.0.0.1:8000/service/id/
