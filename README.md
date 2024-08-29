@@ -1,7 +1,7 @@
 # moxie
 The application is a self contained api microservice built in django based on the project criteria
 
-## Installtion
+## Installation
 Below are the steps required to succesfully run the app
 - Have a working installation of python You can download the latest version of python here http://www.python.org/download.
 - create the python virtual environment with the python -m venv moxie_env for mac or py venv moxie_env for windows
