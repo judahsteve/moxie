@@ -16,7 +16,7 @@ Below are the steps required to succesfully run the app
 Those are the core dependencies that the project requires to execute. 
 
 ## Executing the Project
-Once you finish installing these dependencies, simply copy the moxie folderinto your new django virtual environment
+Once you finish installing these dependencies, simply copy the moxie folder into your new django virtual environment
 - type cd moxie to navigate into the moxie folder
 - type python manage.py runserver start the django server and execute the project
 
