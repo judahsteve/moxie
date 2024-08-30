@@ -162,7 +162,7 @@ cancelled
 - ##### payload
     {
         "medspa": value,
-        "services": ["values","values",]
+        "services": ["values","values",],
         "start_date": "values",
         "start_time": "values"
     }
