@@ -126,7 +126,7 @@ The api has 4 database tables
 - http://127.0.0.1:8000/appointments/
 
 
-**Retrieves all appointments for with based on their status**
+**Retrieves all appointments of a given status**
 - ##### Method Get 
 - http://127.0.0.1:8000/appointments/status/option
 
@@ -142,7 +142,7 @@ The api has 4 database tables
 - http://127.0.0.1:8000/appointments/id/
 
 
-**Retrieves appointment with based on start date**
+**Retrieves appointment of a given start date**
 - ##### Method Get 
 - http://127.0.0.1:8000/appointments/start-date/YYYY-MM-DD/
 
