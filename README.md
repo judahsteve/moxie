@@ -4,23 +4,23 @@ The application is a self contained api microservice built in django based on th
 ## Installation
 Below are the steps required to succesfully run the app
 - Have a working installation of python You can download the latest version of python here http://www.python.org/download.
-- create the python virtual environment with the python -m venv moxie_env for mac or py venv moxie_env for windows
-- start the virtual environment with source moxie_env/bin/activate for mac or source moxie_env/bin/activate.bat for windows
-- install django using pip install django
-- install djangorestframework using pip install djangorestframework
+- create the python virtual environment with the **python -m venv moxie_env** for mac or **py venv moxie_env** for windows
+- start the virtual environment with **source moxie_env/bin/activate** for mac or **moxie_env/bin/activate.bat** for windows
+- install django using **pip install django**
+- install djangorestframework using **pip install djangorestframework**
 
 ## Database Installation
-- Install psycopg2 using pip: pip install psycopg2-binary
-- Install django-postgres using pip: pip install django-postgres
+- Install psycopg2 using pip: **pip install psycopg2-binary**
+- Install django-postgres using pip: **pip install django-postgres**
 
 Those are the core dependencies that the project requires to execute. 
 
 ## Executing the Project
 Once you finish installing these dependencies, simply copy the moxie folder into your new django virtual environment
-- type cd moxie to navigate into the moxie folder
+- type **cd moxie** to navigate into the moxie folder
 - update the Database configuration in the settings.py file to your database details
-- type python manage.py migrate to run the database migrations for the models
-- type python manage.py runserver to start the django server and execute the project
+- type **python manage.py migrate** to run the database migrations for the models
+- type **python manage.py runserver** to start the django server and execute the project
 
 
 
