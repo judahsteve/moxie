@@ -18,7 +18,9 @@ Those are the core dependencies that the project requires to execute.
 ## Executing the Project
 Once you finish installing these dependencies, simply copy the moxie folder into your new django virtual environment
 - type cd moxie to navigate into the moxie folder
-- type python manage.py runserver start the django server and execute the project
+- update the Database configuration in the settings.py file to your database details
+- type python manage.py migrate to run the database migrations for the models
+- type python manage.py runserver to start the django server and execute the project
 
 
 
@@ -31,18 +33,17 @@ The api has 4 database tables
 
 ## API Endpoints
 ### Medspa
-
-**Retrieves all medspas** 
+**Retrieve all medspas** 
 - ##### Method Get 
 - http://127.0.0.1:8000/medspas/
 
 
-
-**Retrieves medspa with specified id**
+\
+**Retrieve medspa with specified id**
 - ##### Method Get 
 - http://127.0.0.1:8000/medspas/id/
 
-
+\
 **Create a new medspa**
 - ##### Method Post 
 - http://127.0.0.1:8000/medspas/
@@ -54,8 +55,9 @@ The api has 4 database tables
         "email":"value"
     }
 
+\
 **Update medspa with spcified id**
-- ##### Method Put 
+- ##### Methods Put, Patch  
 - http://127.0.0.1:8000/medspas/id/
 - ##### payload
     {
@@ -65,29 +67,30 @@ The api has 4 database tables
         "email":"value"
     }
 
+\
 **Delete medspa with specified id**
 - ##### Method Delete 
 - http://127.0.0.1:8000/medspas/id/
 
 
+<br/>
+
 ### Service
-
-
-**Retrieves all services**
+**Retrieve all services**
 - ##### Method Get 
 - http://127.0.0.1:8000/services/
 
- 
-**Retrieves all services for medspa with the specified id**
+\
+**Retrieve all services for medspa with the specified id**
 - ##### Method Get
 - http://127.0.0.1:8000/services/medspa/id
 
-
-**Retrieves service with specified id**
+\
+**Retrieve service with specified id**
 - ##### Method Get 
 - http://127.0.0.1:8000/services/id/
 
-
+\
 **Create a new service**
 - ##### Method Post 
 - http://127.0.0.1:8000/services/
@@ -100,33 +103,32 @@ The api has 4 database tables
         "medspa":"value"
     }
 
-
+\
 **Update service with spcified id**
-- ##### Method Put 
+- ##### Methods Put, Patch 
 - http://127.0.0.1:8000/services/id/
 - ##### payload
     {
         "name":"value",
         "description":"value",
         "duration:"value",
-        "price":"value",
+        "price":"value"
     }
 
-
+\
 **Delete service with specified id**
 - ##### Method Delete 
-- http://127.0.0.1:8000/service/id/
+- http://127.0.0.1:8000/service/id/ 
 
+<br/>
 
 ### Appointment
-
-
-**Retrieves all appointments**
+**Retrieve all appointments**
 - ##### Method Get 
 - http://127.0.0.1:8000/appointments/
 
-
-**Retrieves all appointments of a given status**
+\
+**Retrieve all appointments of a given status**
 - ##### Method Get 
 - http://127.0.0.1:8000/appointments/status/option
 
@@ -136,24 +138,23 @@ The api has 4 database tables
 - completed
 - cancelled
 
-
-**Retrieves appointment with specified id**
+\
+**Retrieve appointment with specified id**
 - ##### Method Get 
 - http://127.0.0.1:8000/appointments/id/
 
-
-**Retrieves appointment of a given start date**
+\
+**Retrieve appointment of a given start date**
 - ##### Method Get 
 - http://127.0.0.1:8000/appointments/start-date/YYYY-MM-DD/
 
-
-- *example*
+    *example*
 
 
 - http://127.0.0.1:8000/appointments/start-date/2024-04-29/
 
 
-
+\
 **Create a new appointment**
 - ##### Method Post 
 - http://127.0.0.1:8000/appointments/
@@ -165,16 +166,12 @@ The api has 4 database tables
         "start_time": "values"
     }
 
-
+\
 **Update the status of appointment with spcified id**
-- ##### Method Put 
+- ##### Methods Put, Patch  
 - http://127.0.0.1:8000/appointments/id/
 - ##### payload
     {
-      "status":"value",
+      "status":"value"
     }
 
-
-**Delete service with specified id**
-- ##### Method Delete 
-- http://127.0.0.1:8000/service/id/
