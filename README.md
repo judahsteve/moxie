@@ -13,7 +13,14 @@ Below are the steps required to succesfully run the app
 - Install psycopg2 using pip: pip install psycopg2-binary
 - Install django-postgres using pip: pip install django-postgres
 
-Those are the core dependencies that the project requires to execute
+Those are the core dependencies that the project requires to execute. 
+
+## Executing the Project
+Once you finish installing these dependencies, simply copy the moxie folderinto your new django virtual environment
+- type cd moxie to navigate into the moxie folder
+- type python manage.py runserver start the django server and execute the project
+
+
 
 ## Database Schema
 The api has 4 database tables
