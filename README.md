@@ -4,8 +4,8 @@ The application is a self contained api microservice built in django based on th
 ## Installation
 Below are the steps required to succesfully run the app
 - Have a working installation of python You can download the latest version of python here http://www.python.org/download.
-- create the python virtual environment with the **python -m venv moxie_env** for mac or **py venv moxie_env** for windows
-- start the virtual environment with **source moxie_env/bin/activate** for mac or **moxie_env/bin/activate.bat** for windows
+- create the python virtual environment with the **python -m venv moxie_env** for mac or **py -m venv moxie_env** for windows
+- start the virtual environment with **source moxie_env/bin/activate** for mac or **moxie_env/scripts/activate.bat** for windows
 - install django using **pip install django**
 - install djangorestframework using **pip install djangorestframework**
 
