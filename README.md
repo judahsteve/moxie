@@ -16,10 +16,11 @@ Below are the steps required to succesfully run the app
 Those are the core dependencies that the project requires to execute. 
 
 ## Executing the Project
-Once you finish installing these dependencies, simply copy the moxie folder into your new django virtual environment
-- type **cd moxie** to navigate into the moxie folder
-- update the Database configuration in the settings.py file to your database details
-- type **python manage.py migrate** to run the database migrations for the models
+Once you finish installing these dependencies, simply copy the moxie folder into the desired location on your file system
+- type **cd moxie** to navigate into the moxie folder. you will see a moxie folder, the readme file, and two other files
+- type **cd moxie** again to navigate into the moxie folder. You should now be in the root folder of the project containing various files and folders including the manage.py file. you will also see another moxie folder in this folder
+- update the Database configuration in the moxie/settings.py file to your database details
+- type **python manage.py migrate** from the projects root folder to run the database migrations for the models
 - type **python manage.py runserver** to start the django server and execute the project
 
 
