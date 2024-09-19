@@ -1,0 +1,47 @@
+create appointments
+{ 
+    "medspa": "1", 
+    "services": ["Lip Flip","Daxxify"],
+    "start_date": "2024-09-21", 
+    "start_time": "12:00" 
+ }
+
+{ 
+    "medspa": "1", 
+    "services": ["Lip Flip"],
+    "start_date": "2024-09-20", 
+    "start_time": "11:00" 
+ }
+
+Create appointment for medspa with invalid service
+{ 
+    "medspa": "1", 
+    "services": ["Microneedling"],
+    "start_date": "2024-09-21", 
+    "start_time": "11:00" 
+ }
+
+{ 
+    "medspa": "2", 
+    "services": ["Microneedling"],
+    "start_date": "2024-09-21", 
+    "start_time": "15:00" 
+ }
+
+{ 
+    "medspa": "2", 
+    "services": ["Lip Flip","Microneedling"],
+    "start_date": "2024-09-20", 
+    "start_time": "16:00" 
+ }
+
+Update appointment status
+{ 
+    "status": "cancelled"
+}
+
+
+{ 
+    "status": "completed"
+}
+

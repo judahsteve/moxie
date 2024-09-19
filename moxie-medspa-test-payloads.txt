@@ -1,0 +1,28 @@
+Create Medspas
+{
+    "name":"Citrus Aesthetics",
+    "address":" 225 test block, room 9,CA 92108",
+    "phone_number":"+1008762456",
+    "email":"johndoe@citrusaesthetics.com"
+}
+{
+    "name":"Diamond care",
+    "address":" 225 diamond care block, room 12,NY 92108",
+    "phone_number":"+1228762456",
+    "email":"janedoe@diamondcare.com"
+}
+
+duplicate email and phone number
+{
+    "name":"Velvet",
+    "address":" 225 Velvet center, room 22,NY 92108",
+    "phone_number":"+1228762456",
+    "email":"janedoe@diamondcare.com"
+}
+
+{
+    "name":"Deletable Ltd",
+    "address":"Deletable  Address",
+    "phone_number":"+199029345",
+    "email":"deletable@email.com"
+}

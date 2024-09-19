@@ -1,0 +1,68 @@
+create services
+{
+    "name":"Lip Flip", 
+    "description":"Lip Flip services", 
+    "price":"100",
+     "duration":"20",
+    "medspa":1
+
+}
+
+{
+    "name":"Daxxify", 
+    "description":"Daxxify services", 
+    "price":"150",
+     "duration":"30",
+    "medspa":1
+
+}
+
+duplicate Lip Flip for medspa 1
+{
+    "name":"Lip Flip", 
+    "description":"Lip Flip services", 
+    "price":"100",
+     "duration":"30",
+    "medspa":1
+
+}
+
+Lip Flip for medspa 2
+{
+    "name":"Lip Flip", 
+    "description":"Lip Flip services", 
+    "price":"100",
+     "duration":"30",
+    "medspa":2
+
+}
+
+{
+    "name":"Microneedling", 
+    "description":"Microneedling services", 
+    "price":"200",
+     "duration":"40",
+    "medspa":2
+
+}
+
+
+{
+    "name":"Deletable", 
+    "description":"Deletable services", 
+    "price":"300",
+     "duration":"50",
+    "medspa":1
+
+}
+
+
+Update a particular service
+{
+    "name":"Microneedling", 
+    "description":"Full Microneedling services", 
+    "price":"200",
+     "duration":"40",
+}
+
+
